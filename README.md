@@ -1,6 +1,7 @@
 # i3 config
 
-Most lines added by me are in sections denoted by:
+Most lines I've added or configured are in sections denoted by:
+
 	# -------
 	blah settings
 	# ------
