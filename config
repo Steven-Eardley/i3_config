@@ -35,6 +35,7 @@ exec --no-startup-id nitrogen --restore
 
 # Start dropboxd
 exec --no-startup-id dropbox start
+
 # -------
 
 
@@ -195,6 +196,7 @@ set $bg     #2c2c2e
 set $fg     #9f9f9f
 set $hi     #efef8f
 set $ac     #e15a5a
+set $lighter_red	#ffb3b3
 set $tx     #040404
 set $ia     #8f8f8f
 set $be     #8faf9f
@@ -202,8 +204,8 @@ set $yw     #ccdc90
 set $gn     #88b090
 set $rd     #e89393
 
-# set some nice colors	            border     background  text
-client.focused          	    $ac        $ac         $tx
+# set some nice colors	            border     background  text	indicator
+client.focused          	    $ac        $ac         $tx	$lighter_red
 client.unfocused       	            $bg        $bg         $ia
 client.focused_inactive    	    $bg        $bg         $ac
 client.urgent                       $rd        $rd         $tx
@@ -235,12 +237,11 @@ bindsym XF86AudioMute exec amixer -D pulse set Master 1+ toggle && killall -USR1
 # System for presenting shutdown options when cmd-eject is pressed
 # Uses "i3exit" script in /usr/bin
 
-set $mode_system System: (l) lock  (e) logout  (s) suspend  (h) hibernate  (r) reboot  (Return) shutdown     (Esc) Do Nothing
+set $mode_system System: (l) lock  (e) logout  (s) suspend  (r) reboot  (Return) shutdown     (Esc) Do Nothing
 mode "$mode_system" {
     bindsym $mod+l exec --no-startup-id i3exit lock, mode "default"
     bindsym $mod+e exec --no-startup-id i3exit logout, mode "default"
     bindsym $mod+s exec --no-startup-id i3exit suspend, mode "default"
-    bindsym $mod+h exec --no-startup-id i3exit hibernate, mode "default"
     bindsym $mod+r exec --no-startup-id i3exit reboot, mode "default"
     bindsym $mod+Return exec --no-startup-id i3exit shutdown, mode "default"  
 

@@ -1,0 +1,35 @@
+#!/bin/sh
+# Called by i3 shutdown dialogue
+# Don't forget to add restart and shutdown to sudoers:
+# steve ALL=(ALL) NOPASSWD: /sbin/poweroff, /sbin/reboot
+
+lock() {
+	dm-tool switch-to-greeter
+}
+suspend() {
+	dbus-send --system --print-reply --dest="org.freedesktop.UPower" /org/freedesktop/UPower org.freedesktop.UPower.Suspend
+}
+
+
+case "$1" in
+    lock)
+        lock
+        ;;
+    logout)
+        i3-msg exit
+        ;;
+    suspend)
+        suspend
+        ;;
+    reboot)
+        sudo reboot
+        ;;
+    shutdown)
+        sudo poweroff
+        ;;
+    *)
+        echo "Usage: $0 {lock|logout|suspend|reboot|shutdown}"
+        exit 2
+esac
+
+exit 0
