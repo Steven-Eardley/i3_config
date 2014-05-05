@@ -230,9 +230,9 @@ bar {
 bindsym XF86AudioRaiseVolume exec amixer set Master 2%+ && killall -USR1 i3status
 bindsym XF86AudioLowerVolume exec amixer set Master 2%- && killall -USR1 i3status
 bindsym XF86AudioMute exec amixer -D pulse set Master 1+ toggle && killall -USR1 i3status
-#bindsym XF86AudioPlay exec mocp -G
-#bindsym XF86AudioNext exec mocp -f
-#bindsym XF86AudioPrev exec mocp -r
+bindsym XF86AudioPlay exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
 
 # System for presenting shutdown options when cmd-eject is pressed
 # Uses "i3exit" script in /usr/bin
