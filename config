@@ -240,12 +240,12 @@ bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer
 # System for presenting shutdown options when cmd-eject is pressed
 # Uses "i3exit" script in /usr/bin
 
-set $mode_system System: (l) lock  (e) logout  (s) suspend  (r) reboot  (Return) shutdown     (Eject) Do Nothing
+set $mode_system System options: (l) lock  (e) logout  (s) suspend  (←) reboot  (⏎) shutdown     (⏏) Do Nothing
 mode "$mode_system" {
     bindsym $mod+l exec --no-startup-id i3exit lock, mode "default"
     bindsym $mod+e exec --no-startup-id i3exit logout, mode "default"
     bindsym $mod+s exec --no-startup-id i3exit suspend, mode "default"
-    bindsym $mod+r exec --no-startup-id i3exit reboot, mode "default"
+    bindsym $mod+BackSpace exec --no-startup-id i3exit reboot, mode "default"
     bindsym $mod+Return exec --no-startup-id i3exit shutdown, mode "default"  
 
     # back to normal: Eject
