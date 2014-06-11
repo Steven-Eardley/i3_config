@@ -173,6 +173,12 @@ bindsym $mod+r mode "resize"
 #}
 
 # -------
+# Open PyCharm IDE
+bindsym $mod+p exec pycharm 
+
+# Open hamster indication
+bindsym $mod+i exec hamster-indicator
+
 # Force float for some applications
 for_window [title="X3: Albion Prelude"] floating enable
 for_window [title="hamster-indicator"] floating enable
