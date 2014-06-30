@@ -177,7 +177,7 @@ bindsym $mod+r mode "resize"
 bindsym $mod+p exec pycharm 
 
 # Open hamster indication
-bindsym $mod+i exec hamster-indicator
+bindsym $mod+i exec --no-startup-id hamster-indicator
 
 # Open Chrome browser
 bindsym $mod+g exec google-chrome
