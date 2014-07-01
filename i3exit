@@ -1,6 +1,7 @@
 #!/bin/sh
 # Called by i3 shutdown dialogue
-# Don't forget to add restart and shutdown to sudoers:
+# Don't forget to add restart and shutdown to sudoers.
+# I.e. in file /etc/sudoers, add:
 # steve ALL=(ALL) NOPASSWD: /sbin/poweroff, /sbin/reboot
 
 lock() {

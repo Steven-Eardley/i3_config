@@ -1,6 +1,6 @@
 # i3status configuration file.
 # Place hidden in home folder; use the command:
-# ln -s ~/.i3/i3status.conf ~/.i3status.conf
+# ln -s ~/.i3/i3status.conf_mbp ~/.i3status.conf
 # to create the necessary link.
 # see "man i3status" for documentation.
 
@@ -18,7 +18,7 @@ general {
 order += "disk /"
 #order += "run_watch DHCP"
 #order += "run_watch VPN"
-#order += "wireless wlan0"
+order += "wireless wlan0"
 #order += "ethernet eth0"
 order += "battery 0"
 order += "cpu_usage"
