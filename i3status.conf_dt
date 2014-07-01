@@ -1,6 +1,6 @@
-# i3status configuration file.
+# i3status configuration file for a Desktop computer.
 # Place hidden in home folder; use the command:
-# ln -s ~/.i3/i3status.conf ~/.i3status.conf
+# ln -s ~/.i3/i3status.conf_dt ~/.i3status.conf
 # to create the necessary link.
 # see "man i3status" for documentation.
 
@@ -14,7 +14,7 @@ general {
         interval = 5
 }
 
-order += "ipv6"
+#order += "ipv6"
 order += "disk /"
 #order += "run_watch DHCP"
 #order += "run_watch VPN"
