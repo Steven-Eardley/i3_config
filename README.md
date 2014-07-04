@@ -19,7 +19,7 @@ i3 is awesome. Well, it's not [awesome](http://awesome.naquadah.org/), but it's 
 * It is somewhat optimised for an Apple Wireless Keyboard (config_dt uses eject key on kbd for shutdown).
 
 * To use the status bar configuration, create a symbolic link from i3status.conf, hidden in home folder:
-	ln -s ~/.i3/i3status.conf ~/.i3status.conf
+        ln -s ~/.i3/i3status.conf ~/.i3status.conf
 
 * Place i3exit in ~/bin/ and ensure it is executable.
 
