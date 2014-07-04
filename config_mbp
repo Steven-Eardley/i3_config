@@ -236,8 +236,8 @@ bar {
 
 # Use the keyboard to raise + lower the system volume
 
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5
 bindsym XF86KbdBrightnessUp exec sudo /home/steve/bin/kbd_brightness_up
 bindsym XF86KbdBrightnessDown exec sudo /home/steve/bin/kbd_brightness_down
 bindsym XF86AudioRaiseVolume exec amixer -c 1 set Master 2%+ && killall -USR1 i3status
