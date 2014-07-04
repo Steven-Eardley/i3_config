@@ -21,7 +21,7 @@ i3 is awesome. Well, it's not [awesome](http://awesome.naquadah.org/), but it's 
 	```
 	ln -s ~/.i3/i3status.conf ~/.i3status.conf
 	```
-* Place 'i3exit' in '~/bin/' and ensure it is executable.
+* Place `i3exit` in `~/bin/` and ensure it is executable.
 
 ## On macbook:
 
