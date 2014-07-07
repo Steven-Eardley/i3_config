@@ -31,7 +31,7 @@ exec --no-startup-id compton --backend glx --paint-on-overlay --vsync opengl-swc
 exec --no-startup-id nitrogen --restore
 
 # Start dropboxd
-#exec --no-startup-id dropbox start
+exec --no-startup-id dropbox start
 
 # Start deja-dup backup utility on workspace 4, hidden from view
 #exec --no-startup-id i3-msg 'workspace 4; exec deja-dup --backup; workspace 2; workspace 1'
