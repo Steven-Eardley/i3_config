@@ -182,6 +182,9 @@ bindsym $mod+i exec --no-startup-id hamster-indicator
 # Open Chrome browser
 bindsym $mod+g exec google-chrome
 
+# Open Thunderbird mail
+bindsym $mod+m thunderbird
+
 # Force float for some applications
 for_window [title="X3: Albion Prelude"] floating enable
 for_window [title="hamster-indicator"] floating enable
