@@ -1,0 +1,6 @@
+#!/bin/sh
+# Remember to add grub-reboot to /etc/sudoers file, e.g the line:
+# steve ALL=(ALL) NOPASSWD: /usr/sbin/grub-reboot
+
+sudo grub-reboot 4
+sudo reboot
