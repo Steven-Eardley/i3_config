@@ -190,6 +190,7 @@ for_window [title="X3: Albion Prelude"] floating enable
 for_window [title="hamster-indicator"] floating enable
 for_window [title="TeamViewer"] floating enable
 for_window [title="XCOM"] floating enable
+for_window [title="SplashScreen"] floating enable
 for_window [title="rdesktop"] floating enable
 
 # Odd workspaces created on the left screen, even ones on the right.
