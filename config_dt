@@ -189,6 +189,7 @@ bindsym $mod+m thunderbird
 for_window [title="X3: Albion Prelude"] floating enable
 for_window [title="hamster-indicator"] floating enable
 for_window [title="TeamViewer"] floating enable
+for_window [title="XCOM"] floating enable
 
 # Odd workspaces created on the left screen, even ones on the right.
 # Falls back to primary screen if specified is not found.
