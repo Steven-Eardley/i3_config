@@ -55,6 +55,13 @@ bindsym $mod+Shift+q kill
 # installed.
 bindsym $mod+Return exec --no-startup-id i3-dmenu-desktop
 
+# WORKSPACE STUFF #
+
+bindsym $mod+Home exec i3-msg workspace prev
+bindsym $mod+End exec i3-msg workspace next
+
+# WINDOW STUFF #
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -182,9 +189,14 @@ bindsym $mod+g exec google-chrome
 # Open Thunderbird mail
 bindsym $mod+m exec thunderbird
 
+# Open setup for doing work
+bindsym $mod+c exec i3-msg 'workspace 2; exec firefox; workspace 3; exec thunderbird; workspace 1; exec pycharm' 
+
 # Force float for some applications
 for_window [title="hamster-indicator"] floating enable
 for_window [title="TeamViewer"] floating enable
+for_window [title="rdesktop"] floating enable
+for_window [title="Skype"] floating enable
 
 # Odd workspaces created on the left screen, even ones on the right.
 # Falls back to primary screen if specified is not found.
