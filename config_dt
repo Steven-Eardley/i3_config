@@ -24,9 +24,6 @@ font pango:Ubuntu Mono 10
 # -------
 # Startup programs:
 
-# Rotate dell display
-exec --no-startup-id xrandr --output DVI-D-0 --rotate left --pos 1920x-300
-
 # Compositor
 exec --no-startup-id compton --backend glx --paint-on-overlay --vsync opengl-swc -b
 
@@ -197,7 +194,7 @@ for_window [title="rdesktop"] floating enable
 # Falls back to primary screen if specified is not found.
 # Use `xrandr` to get output names.
 set $left_screen DVI-I-1
-set $right_screen DVI-D-0
+set $right_screen HDMI-0
 
 workspace 1  output $left_screen
 workspace 3  output $left_screen
