@@ -194,7 +194,7 @@ for_window [title="rdesktop"] floating enable
 # Falls back to primary screen if specified is not found.
 # Use `xrandr` to get output names.
 set $left_screen DVI-I-1
-set $right_screen HDMI-0
+set $right_screen DVI-D-0
 
 workspace 1  output $left_screen
 workspace 3  output $left_screen
