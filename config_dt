@@ -33,8 +33,8 @@ exec --no-startup-id nitrogen --restore
 # Start dropboxd
 exec --no-startup-id dropbox start
 
-# Start deja-dup backup utility on workspace 4, hidden from view
-exec --no-startup-id i3-msg 'workspace 4; exec deja-dup --backup; workspace 2; workspace 1'
+# Start deja-dup backup utility on workspace 4, hidden from view (disabled 2019 hd upgrade)
+#exec --no-startup-id i3-msg 'workspace 4; exec deja-dup --backup; workspace 2; workspace 1'
 
 # -------
 
